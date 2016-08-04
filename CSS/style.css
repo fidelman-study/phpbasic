@@ -1,0 +1,261 @@
+/* Оформление параграфов */
+@import url(http://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	background-image: url(Ground.png);
+}
+#navigation {
+	height: 40px;
+	margin-bottom: 30px;
+}
+#navigation ul li{
+	float: left;
+	background-color: rgba(10,10,10,0.65);
+	border: 1px solid #fff;
+	position: relative;
+	width: 110px;
+}
+#navigation ul li a{
+	font-family: "Poiret One",sans-serif;
+	font-weight: bold;
+	display: block;
+	text-decoration: none;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 15px;
+	color: white;
+}
+#navigation ul li a:hover{
+	background-color: red;
+	
+}
+#navigation #punkt:hover #dropdown{
+	display: block;
+}
+#dropdown {
+	display: none;
+	position: absolute;
+}
+#dropdown li {
+	width: 110px;
+}
+#dropdown li a {
+
+}
+#page {
+	margin: 0 10%;
+	width: 960px;
+	height: 2000px;
+}
+
+#content .text{
+	font-family: "Poiret One", sans-serif;
+	font-weight: bold;
+	background-color: rgba(50,74,255,0.7);
+	border-radius: 5px 5px 5px 5px;
+	height: 100px;
+	color: white;
+	float: center;
+	margin: 30px -15px;
+	padding: 20px 20px;
+}
+#content .list li a{
+	font-family: "Poiret One", sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	width: 100%;
+	color: rgb(52,11,28);
+	display: block;
+	border: 1px solid rgb(52,11,28);
+	background-color: rgba(255,255,255,1);
+	margin: 0px -15px;
+	height: 50px;
+	line-height:50px;
+
+}
+#content .list li a:hover{
+	background-color: rgba(255,255,255,0.8);
+
+
+}
+#content .list li{
+	height: 50px;
+	line-height:50px;
+	list-style-image: url(listImage.png);
+	list-style-position: inside;
+	padding-top: 10px;
+}
+.logo {
+	display: block;
+}
+.search {
+	position: absolute;
+	right: 200px;
+	top:100px;
+}/*
+#fixed {
+	position: fixed;
+	background-color: rgba(255,255,255,0.5);
+	top:0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+.modal-body {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	color: white;
+
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -200px;
+
+}
+*/
+#article {
+	width: 740px;
+	padding-left: 20px; 
+	float: right;
+}
+#sideBar{
+	width: 200px;
+	float: left;
+}
+#article p{
+	color: #fff;
+	font-family:"Poiret One" ,sans-serif;
+}
+#sideBar ul li {
+	color: #fff;
+	font-family:"Poiret One" ,sans-serif;
+
+}
+#text:before,
+#text:after{
+	content: "";
+	display:table;
+}
+#text:after{
+	clear: both;
+}
+#text {
+	zoom:1;
+	padding-top: 20px;
+} 
+.pseudo-class {
+	color: red;
+
+}
+.pseudo-class:hover{
+	color: green;
+}
+
+.pseudo-class:visited{
+	color: blue;
+}
+.pseudo-class:focus{
+	color: yellow;
+}
+#article p:first-child {
+	color: black;
+}
+#article p:last-child {
+	color: black;
+}
+.pseudo-element::before,
+.pseudo-element::after{
+	content: " ";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #fff;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+.first-letter::first-letter{
+	color: red;
+	font-size: 48px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.first-line::first-line{
+	font-size: 24px;
+	color:yellow;
+}
+::selection{
+	background: #fff;
+	color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

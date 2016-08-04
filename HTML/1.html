@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<HEAD>
+		<meta charset="WINDOWS-1251">
+		<title>
+			ТРОЛОЛО
+		</title>
+		<script></script> <!--в аттрибуте подключаем скрипт -->
+		<link rel="stylesheet" href="style.css"> <!-- подключение css -->
+		<style type="text/css">
+		h1 {
+			background: orange;
+			color: green
+		}
+		#firstName {
+			color: green;
+		}
+		</style> <!-- прописываем css , НЕРЕКОМЕНДУЕТСЯ-->
+		<meta name="keywords" content="моя, первая, страница"> <!-- ключевые слова для индексации -->
+		<meta name="description" content="Разрабатываю свою первую страницу"> <!-- описание для индексации не большое! -->
+		<meta name="author" lang="ru" content="Андрей Фидельман"> <!-- автор -->
+	</HEAD>
+	<BODY>
+		<H1>
+			Заголовок
+		</H1>
+		<p>
+			<b>Жирный</b> <i>Курсив</i> <u>Подчеркнуть</u>
+		</p>
+		<p>
+			<em>Курсив</em> <sup>Надстрочный</sup> <sub>Подстрочный</sub><ins>Подчеркнуть</ins>
+		</p>
+		<table border=1>
+			<TBODY>
+				<TR>
+					<TH rowspan="3" align="left" valign="top" width=400>
+						Списки
+						<hr>
+						<ul>
+							<li>
+								Элемент списка 1
+							</li>
+							<li>
+								Элемент списка 2
+								<ul>
+									<li>
+										Элемент подсписка 1
+										<ul>
+											<li>
+												Трололо
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Элемент списка 3
+							</li>
+							<li>
+								Элемент списка 4
+							</li>
+						</ul> <!-- ненумерованный список -->
+						<ol>
+							<li>
+								Элемент списка 5
+							</li>
+							<li>
+								Элемент списка 6
+							</li>
+							<li>
+								Элемент списка 7
+								<ol>
+									<li>
+										Элемент подсписка 1
+									</li>
+									<li>
+										Элемент подсписка 2
+									</li>
+								</ol>
+							</li>
+							<li>
+								Элемент списка 8
+							</li>
+						</ol> <!--нумерованный список-->
+					</TH>
+					<TH>
+						Загаловок
+					</TH>
+					<TH  rowspan="2">
+						Слить 2 строки
+					</TH>
+				</TR>
+				<TR>
+					<TD align="center">
+						Содержание
+					</TD>
+				</TR>
+				<TR>
+					<TD colspan="2" align="center">
+						<img src="img.gif" alt="Ключевое слово для изображения" width=400>
+					</TD>
+				</TR>
+			</TBODY>
+		</table>
+		<p>
+			<pre>
+				Учитывать все, что в редакторе
+			</pre> 
+		</p>
+		<form action="2.html" method="post">
+			<label for="firstName">Ваше имя</label>
+			<input type="text" name="firstName" placeholder="Введите имя" id="firstName">
+			<br>
+			<label for="password">Ваш пороль</label>
+			<input type="password" name="password" id="password">
+			<br>
+			<input type="submit" name="submit" value="Отправить">
+			<br>
+			<input type="checkbox" name="remember" value="1">
+			<br>
+			Ваш пол
+			<input type="radio" value="male" name="sex"> Муж  <input type="radio" value="female" name="sex"> Жен
+			<br>
+			<textarea name="comment" rows="10" cols="30"></textarea>
+		</form><!--method - GET - send data, user see - POST - user doesn't see-->
+		<p>
+			<blockquote id="Identificator">
+				Цитата!
+			</blockquote>
+		</p>
+		<p>
+			<mark> Выделить </mark> <del>Зачеркнуть</del>
+		</p>
+		<address>
+			Индексация
+			<br>
+			Адреса
+		</address>
+		<p>
+			<a href="https://vk.com/id20452800" target="_blank">Открыть ссылку в новой вкладке</a>
+			<br>
+			<a href="#Identificator">Перейти по идентификатору</a>
+		</p>
+		<p>
+			<div>
+				London is the capital of Great Britain.
+			</div>
+			<div>
+				Britain population is over 12 millions peaople.
+			</div>
+			<span>
+				London is the capital of Great Britain.
+			</span>
+			<span>
+				Britain population is over 12 millions peaople.
+			</span>
+		</p>
+
+	</BODY>
+</html>
